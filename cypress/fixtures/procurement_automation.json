@@ -1,0 +1,14 @@
+{
+  "URL": "https://fa-erzp-dev12-saasfademo1.ds-fa.oraclepdemos.com/",
+  "Roles": {
+    "_comment_": "each roles and its username and password ",
+    "SuperUser": {
+      "username": "rkanakaraj@cloudvice.com",
+      "password": "Welcome@12"
+    }
+  },
+  "SetupAndMaintenance": {
+    "Module_name": "Procurement",
+    "Task_name": "Manage Inventory Organizations"
+  }
+}
