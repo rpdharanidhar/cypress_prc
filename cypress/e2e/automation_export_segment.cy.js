@@ -1,6 +1,4 @@
-// import { SetupAndMaintaince } from "../Setup_and_MaintaincePage";
-import { SetupAndMaintaince } from "../../../cypress/e2e/Setup_and_MaintaincePage";
-
+import { SetupAndMaintaince } from "../PageObjects/Setup_and_MaintaincePage";
 
 describe("Procurement Automation", () => {
   let fixtureData;
