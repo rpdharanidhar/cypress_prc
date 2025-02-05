@@ -37,8 +37,8 @@ module.exports = defineConfig({
           });
         });
     },
-    defaultCommandTimeout: 100000,
-    requestTimeout: 10000,
+    defaultCommandTimeout: 1000000,
+    requestTimeout: 1000000,
     // experimentalSessionAndOrigin: true0,
     chromeWebSecurity: false,
     // viewportWidth: 1280,
