@@ -9,6 +9,6 @@
   },
   "SetupAndMaintenance": {
     "Module_name": "Procurement",
-    "Task_name": "Manage Procurement Agents"
+    "Task_name": "Manage Inventory Organizations"
   }
 }
