@@ -279,7 +279,7 @@ describe("Procurement Automation", () => {
       cy.wait(5000);
 
       const filePath = "cypress/fixtures/result.zip";
-      const logfilePath = "cypress/fixtures/"
+      const logfilePath = "cypress/fixtures/log.txt";
       cy.log(`File path: ${filePath}`);
       cy.bodyEnter();
       cy.xpath(`//input[@type='file']`).selectFile(filePath);
