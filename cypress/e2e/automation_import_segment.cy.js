@@ -1,5 +1,5 @@
 // // import "cypress-if";
-// import { SetupAndMaintaince } from "../Setup_and_MaintaincePage";
+// import { SetupAndMaintaince } from "../PageObjects/Setup_and_MaintaincePage";
 // import "cypress-if"; // Ensure this is imported in your support file or test script
 // describe("Procurement Automation", () => {
 //   let fixtureData;
@@ -221,7 +221,8 @@
 // });
 
 // import "cypress-if";
-import { SetupAndMaintaince } from "../Setup_and_MaintaincePage";
+// import { SetupAndMaintaince } from "../Setup_and_MaintaincePage";
+import { SetupAndMaintaince } from "../PageObjects/Setup_and_MaintaincePage";
 import "cypress-if"; // Ensure this is imported in your support file or test script
 describe("Procurement Automation", () => {
   let fixtureData;
