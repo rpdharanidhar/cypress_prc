@@ -279,6 +279,7 @@ describe("Procurement Automation", () => {
       cy.wait(5000);
 
       const filePath = "cypress/fixtures/result.zip";
+      const logfilePath = "cypress/fixtures/"
       cy.log(`File path: ${filePath}`);
       cy.bodyEnter();
       cy.xpath(`//input[@type='file']`).selectFile(filePath);
@@ -411,8 +412,10 @@ describe("Procurement Automation", () => {
       
               if (status === "Completed successfully") {
                 cy.log("Status is Completed successfully");
+                cy.writeFile(logfilePath, "Completed successfully");
               } else if (spanTexts.some((text) => text.includes("Completed with errors"))) {
                 cy.log("Status is Failed, Log File is being downloaded :) !!!");
+                cy.writeFile(logfilePath, "Completed with errors");
       
                 cy.xpath(
                   `//table[@summary="Export and Import Processes"]//tr[1]//td//td[4]//a[contains(text()='Completed')][./ancestor::table//tr[1]//td[2]//td[.//span[contains(text(), '${inputData.Task_name}')]]]`
